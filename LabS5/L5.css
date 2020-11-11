@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: black;
+    line-height: 1.25;
+    font-weight: 400;
+    background-color: white;
+    height: 650px;
+}
+img{
+    max-width: 100%;
+    width: 30px;
+    height: 20px;
+}
+#box{
+    width: 500px;
+    height: 650px;
+    box-shadow: 0px 0px 1px dimgray;
+    margin: auto;
+    background-color: whitesmoke;
+}
+#top{
+    width: 500px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#box p1{
+    font-size: 20px;
+    font-weight: bold;
+}
+h2{
+    padding-top: 25px;
+    text-align: center;
+}
+#main{
+    margin: auto;
+    width: 400px;
+    height: 435px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px dimgrey;
+}
+.form-group{
+    font-weight: bold;
+    height: 70px;
+    margin: 20px 10% 0px;
+    line-height: 30px;
+    width: 100%;
+}
+input{
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid dimgrey;
+}
+input[name="firstname"]{
+    width: 40%;
+}
+input[name="lastname"]{
+    width: 40%;
+}
+button{
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    height: 40px;
+    border: 1px solid dodgerblue;
+    margin: 10px auto 0px auto;
+}
+#footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+
