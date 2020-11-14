@@ -1,0 +1,87 @@
+body{
+    background-color: #fafafa;
+}
+img{
+    max-width: 100%;
+    /* Do rong toi da cua anh, tu dong chia kich co anh cho phu hop */
+}
+div{
+    background-color: #ffffff;
+    float: left;  /* Ep cac khoi ve ben trai, don khit den muc khong con o trong nua */
+    /* 3 gia tri left right none */
+    width: 300px;
+    /* border: 10px solid #666666; */
+
+    margin: 8px; /* Khoang cach giua cac div */
+                /* Margin top, left, right, bottom */
+    /* lenh viet tat Margin: 8px 10px 20px 30px; theo chieu kim dong ho tuong tu top right bottom left, thieu mot gia tri nao thi lay doi dien */
+    /* Margin khong duoc tinh vao kich thuoc khoi */
+
+    padding: 20px; /* Khoang cach noi dung cua khoi den boder, tinh bao trong kich thuoc khoi */
+    /* padding cung theo nguyen tac chieu kim dong ho nhu margin */
+
+    box-sizing: border-box; /* kich co khoi duoc tinh tu duong boder di vao, kich thuoc khoi se khong tang them border */
+    /* box-sizing: content-box la mac dinh ban dau, border padding tinh ngoai kich thuoc khoi*/
+
+    box-shadow: 0px 0px 5px red; /* bong, khung vien dep gia tri dau tien day x don vi, thu hai day y don vi, thu 3 do nhoe cua bong */
+
+    border-radius: 5px; /* Got goc border, co the su dung de got thanh cac hinh tron, elip... */
+}
+span{ /* tao hinh tron bang border radius */
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100%;
+    transition: background-color 300ms;  /* lam cho cac hieu ung chuyen dong dien ra tu tu */
+    animation: dengiaothong2;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+    animation-delay: 2s;
+}
+
+span:hover{
+    background-color: green;
+} /*trang thai hover dua con chuot vao se active */
+
+@keyframes dengiaothong {
+    from{
+        background-color: red;
+        width: 300px;
+    }
+    to{
+        background-color: green;
+        width: 500px;
+    }
+
+}
+/* Bo dinh nghia chuyen dong from to*/
+
+@keyframes dengiaothong2 {
+    0%{
+        width: 300px;
+    }
+    40%{
+        background-color: green;
+        width: 500px;
+    }
+    60%{
+        width: 600px;
+    }
+    100%{
+        width: 300px;
+    }
+}
+/* Bo dinh nghia chuyen dong cu the thoi gian duration */
+#Mou{
+    background-color: pink;
+}
+#Mou p{
+    color: green;
+    text-align: center;
+}
+#Mou:hover p{
+    color: red;
+    text-align: left;
+    margin-top: -50px;
+}
