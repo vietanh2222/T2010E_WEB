@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Bootstrap</title>
+    <link rel="stylesheet" href="libs/fontawesome 5.15.1/css/all.css">
+    <link rel="stylesheet" href="libs/bootstrap 3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="S7.css">
+</head>
+<body>
+    <header class="section header col-md-12">
+        <div class="container">
+            <div class="parent row">
+
+                <!--Khi dungh ham col thi paren luon phai dat them gia tri "row" de bo padding-->
+
+                <div class="child1 col-md-3 col-sm-4 col-xs-6"></div>
+                <div class="child2 col-md-3 col-sm-4 col-xs-6"></div>
+                <div class="child3 col-md-3 col-sm-4 col-xs-6"></div>
+                <div class="child4 col-md-3 col-sm-4 col-xs-6"></div>
+            <!-- Khi style phai style ben trong khong duoc style parent neu khong se loi bootstrap -->
+            </div>
+        </div>
+    </header>
+    <section class="section main col-md-12">
+        <div class="container">
+            <h1>Register</h1>
+            <div class="form-box col-md-6 col-md-offset-3">
+
+<!--                col md offset: Tuong duong margin left: 25%-->
+
+                <form method="post" action="#">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" type="email" name="email" placeholder="Email..." />
+                    </div>
+                    <div class="form-group">
+                        <label>UserName</label>
+                        <input class="form-control" type="text" name="text" placeholder="Username..." />
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control" type="password" name="password" placeholder="Password..." />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-danger submit">Register</button>
+                        <button class="btn btn-primary submit">Register</button>
+                        <button class="btn btn-success submit">Register</button>
+                        <button class="btn btn-default submit">Register</button>
+
+<!--                        btn btn... chon mau cho register trong boostrap-->
+<!--                            btn-danger: mau do-->
+<!--                            btn-primary....-->
+<!--                            btn-success...-->
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section col-md-12">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-3">
+                <table class="table table table-bordered table-striped table-hover">
+<!--                    them class table tu bootstrap de cho table dep hon-->
+                    <thead>
+                    <th>No</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Mark</th>
+                    </thead>
+                    <tbody>
+                        <tr class="info text-center">
+                            <td>#1</td>
+                            <td>Donaltrump@gmail.com</td>
+                            <td>Donal Trump</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="danger text-uppercase">
+                            <td>#1</td>
+                            <td>Donaltrump@gmail.com</td>
+                            <td>Donal Trump</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="success">
+<!--                            Nhan manh dong nay-->
+                            <td><i class="glyphicon glyphicon-heart icon"></i></td>
+<!--                            Su dung font icon, su dung font icon thay cho dung hinh anh vi-->
+<!--                            Anh: uu diem cai nao cung co tuy nhien lam rat kho, chay ra rat cham-->
+<!--                            Font icon la chu, rat nhe moi trang thai hover, ... deu ok rat de,
+                                tuy nhien so luong co han, nhung icon dep muon dung phai mat phi-->
+                            <td><i class="fab fa-facebook-square icon"></i></td>
+                            <td>Donal Trump</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

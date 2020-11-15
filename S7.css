@@ -1,0 +1,20 @@
+.child1{
+    height: 100px;
+    background-color: #2aabd2;
+}
+.child2{
+    height: 100px;
+    background-color: #2b542c;
+}
+.child3{
+    height: 100px;
+    background-color: orange;
+}
+.child4{
+    height: 100px;
+    background-color: blue;
+}
+.icon{
+    font-size: 50px;
+    color: green;
+}
