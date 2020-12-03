@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nav Tab</title>
+    <link rel="stylesheet" href="libs/bootstrap 3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="LapS13.css">
+</head>
+<body>
+    <div id="popup">
+        <nav class="section nav">
+             <div class="h1"><h1>Xac Dinh vi tri trong Tabs</h1></div>
+            <div class="button">
+            <button type="button" onmouseenter="home(this)">Home</button>
+            <button type="button" onmouseenter="Profile(this)">Profile</button>
+            <button type="button" onmouseenter="Messenger(this)">Messenger</button>
+            <button type="button" onmouseenter="Setting(this)">Settings</button>
+            </div>
+        </nav>
+        <div id="content" class="section content">
+        </div>
+    </div>
+    <script type="text/javascript">
+        function home() {
+            var h = document.getElementById("content");
+            h.innerText = "This is Home content";
+        }
+        function Profile() {
+            var h = document.getElementById("content");
+            h.innerText = "This is Profile content"
+        }
+        function Messenger() {
+            var h = document.getElementById("content");
+            h.innerText = "This is Messenger content";
+        }
+        function Setting() {
+            var h = document.getElementById("content");
+            h.innerText = "This is Setting content";
+        }
+    </script>
+</body>
+</html>
