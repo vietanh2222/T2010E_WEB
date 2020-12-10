@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Sliding Menu</title>
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap 3.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="LapS15.css">
+    <link rel="stylesheet" href="libs/fontawesome 5.15.1/css/all.css">
+</head>
+<body>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="left">
+            <div id="links" class="col-md-2 menu-link nopadding">
+                <ul>
+                    <li><a href="#"><i onclick="hide(this)" class="fas fa-times"></i></a> </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-10 right">
+                <div class="col-md-12 menu-click">
+                    <i onclick="show()" class="fas fa-bars"></i>
+                    <span onclick="show()">Menu</span>
+                </div>
+                <div class="col-md-12">
+                    <h1>Interactive Sliding Menu Demo</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function hide() {
+            var h = $(".menu-link");
+            h.remove();
+            var r = $(".right");
+            r.removeClass("col-md-10");
+            r.addClass("col-md-12");
+        }
+        function show() {
+            var r = $(".right");
+            if(r.hasClass("col-md-12")){
+            var h = $(".left");
+            h.prepend("<div id=\"links\" class=\"col-md-2 menu-link nopadding\">\n" +
+                "                <ul>\n" +
+                "                    <li><a href=\"#\"><i onclick=\"hide(this)\" class=\"fas fa-times\"></i></a> </li>\n" +
+                "                    <li><a href=\"#\">Home</a></li>\n" +
+                "                    <li><a href=\"#\">Services</a></li>\n" +
+                "                    <li><a href=\"#\">Blog</a></li>\n" +
+                "                    <li><a href=\"#\">About</a></li>\n" +
+                "                    <li><a href=\"#\">Contact</a></li>\n" +
+                "                </ul>\n" +
+                "            </div>");
+            r.removeClass("col-md-12");
+            r.addClass("col-md-10");
+        }else{
+        }}
+    </script>
+</body>
+</html>
